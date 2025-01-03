@@ -35,6 +35,7 @@ const MediaSelectionScreen = ({ navigation }) => {
 
       <ScrollView>
         {media.map((item, index) => (
+          // console.log("this is inside media selection screen")
           <Image key={index} source={{ uri: item.uri }} style={styles.image} />
         ))}
       </ScrollView>

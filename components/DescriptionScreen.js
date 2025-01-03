@@ -15,6 +15,7 @@ const DescriptionScreen = ({ route }) => {
     <View style={styles.container}>
       <Text style={styles.title}>Final Review</Text>
       {media.map((item, index) => (
+        // console.log("this is inside descripton screen")
         <Image key={index} source={{ uri: item.uri }} style={styles.image} />
       ))}
       <Text>Description: {description}</Text>
